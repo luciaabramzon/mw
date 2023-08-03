@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'jetlab';
+    src: url('../font/JetlabVariable.ttf') format('truetype');
+  }
+  
+  .navContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .nav {
+    background-color: black !important;
+    border-radius: 0px !important;
+    padding: 16px 80px;
+    height: 80px;
+  }
+  .logoTitle {
+    font-family: jetlab, sans-serif;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  
+  .logo {
+    width: 202px;
+    height: 48px;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Alineamos verticalmente los elementos del navbar */
+    width: 100%;
+  }
+  
+  .itemsNav a {
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .navItems {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .whatsappButton {
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 110%;
+    font-family: jetlab, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: none;
+  }
+  
+  .whatsappButton:hover {
+    background-color: black;
+  }
+  
+  .navItems .itemsNav .active-link::after {
+    content: '';
+    display: block;
+    width: 10.91px;
+    height: 10.91px;
+    background-image: url('../images/ball.svg');
+    background-size: cover;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+  }
+
+  .hamburger {
+    display: none; 
+  }
+  .navItemsOutsideNavbar {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      display: none; 
+    }
+    .hamburger ~ .navItemsOutsideNavbar {
+      display: none;
+    }
+  
+    .navItems {
+      flex-direction: column; 
+      background-color: black; 
+      position: fixed;
+      top: 80px; 
+      right: 0;
+      height: calc(100vh - 80px); 
+      width: 200px;
+      z-index: 999;
+      transform: translateX(100%); 
+      transition: transform 0.3s ease;
+    }
+  
+    .navItems.visible {
+      transform: translateX(0); 
+    }
+  
+    .nav{
+        padding:0px !important
+    }
+    .hamburger {
+      display: flex; 
+      cursor: pointer;
+      color: white;
+      margin-right: 4%;
+      font-size: 150%;
+    }
+    .logo{
+        margin-left:4%;
+    }
+    
+  }
+  
+  

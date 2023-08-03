@@ -1,0 +1,61 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.logoFooter{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 33%;
+}
+.footerTitle{
+    font-family: jetlab, sans-serif;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    font-style:italic;
+    font-size:24px;
+    line-height: 24px;
+    margin-left: 1%;
+}
+.brand{
+    width: 33%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1%;
+    justify-content: center;
+}
+.socialNetwork{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5%;
+    align-items: center;
+}
+.footerIcon{
+    color: white;
+    margin: 3%;
+}
+.socialNetwork, i{
+    font-size: 250%;
+}
+i{
+    margin: 3% !important;
+}
+@media (max-width: 768px) {
+    .footerTitle{
+        display: none;
+    }
+    .logoFooter img{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .socialNetwork{
+        font-size: 150%;
+    }
+}

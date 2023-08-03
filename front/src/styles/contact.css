@@ -1,0 +1,154 @@
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 10%;
+}
+.contactForm{
+    width: 100%;
+}
+form{
+    margin-left: 10%;
+}
+form h5{
+    font-family: Jetlab;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin-top: 20% !important;
+    margin-bottom: 10%;
+}
+label{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name ,.surname, .asunto{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+input{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 8% !important;
+}
+
+.asunto, .message{
+    margin-top: 10%;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.message, input{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent;
+}
+.buttonForm{
+    text-align: center;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.sendMessage{
+    font-family: Jetlab;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+}
+button:hover{
+    color: white;
+}
+
+.enviando {
+    font-family: Jetlab;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+}
+.recibedMessage{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.recibed{
+    margin: 5%;
+}
+.sendOther{
+    background-color: black;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    width: 40%;
+    font-family: Roboto;
+}
+.sendOther:hover{
+    background-color: white;
+    color: black;
+}
+@media (max-width: 768px) {
+    .contactImg{
+        display: none;
+    }
+    .contact{
+        height: 100vh;
+    }
+    form{
+        margin: 0;
+    }
+    label{
+        font-size: 18px;
+    }
+    .buttonForm{
+        margin-top: 5%;
+    }
+    .sending{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .enviando{
+        font-size: 100px;
+    }
+    .sendOther{
+        width: 100%;
+    }
+    
+}

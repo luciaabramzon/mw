@@ -1,0 +1,90 @@
+.eIntegral{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #D99B29;
+}
+
+.eText , .edadesText, .clasesText{
+    width: 66%;
+}
+.eText h5 , .edadesText h5, .clasesText h5{
+    font-family: Jetlab;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 2% !important;
+}
+
+.eText ul{
+    margin-left: 7%;
+}
+
+.eText li{
+    font-family: Crimson Text;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.eText li p{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.eImg img{
+    margin: 3% 5% 3%;
+}
+
+.edades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #BF6550;
+}
+.edadesText p, .clasesText p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left:10%;
+}
+.clases{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #592925;
+}
+@media (max-width: 768px) {
+    .eIntegral, .edades, .clases{
+        justify-content: center;
+        height: 100vh;
+    }
+    .eText, .edadesText, .clasesText{
+        width: 85%;
+    }
+    .edadesText p, .clasesText p{
+        margin-bottom: 4% !important;
+    }
+     .edadesImg img, .clasesImg img{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 3%;
+    }
+    .eImg img{
+        display: none
+    }
+
+}

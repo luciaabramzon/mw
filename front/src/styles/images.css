@@ -1,0 +1,53 @@
+
+.imagesGrid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px; 
+}
+.row{
+    margin: 2% 7% 0% 7%;
+}
+.buttonImages{
+    text-align: center;
+}
+.buttonImages button{
+    font-family: Jetlab;
+font-size: 24px;
+font-style: italic;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+background-color: black;
+letter-spacing: 2px;
+width: 10%;
+text-align: center;
+border-radius: 5px;
+}
+.buttonImages button:hover{
+    background-color: white;
+    color: black;
+}
+.logoImg{
+    text-align: center;
+    margin-top: 1%;
+}
+.imagesGrid img{
+    margin: 0.2%;
+}
+@media (max-width: 768px) {
+    .imgText{
+        justify-content: center;
+    }
+    .divTitle ,.divText{
+        width: 100%;
+        margin: 3% 7%;
+    }
+    .buttonImages button{
+        width: 50%;
+    }
+    .logoImg img{
+        width: 80%;
+        margin: 10%;
+    }
+}
