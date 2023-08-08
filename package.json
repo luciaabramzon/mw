@@ -1,0 +1,8 @@
+{
+    "name": "mw",
+    "scripts": {
+      "start:backend": "node back/server.js",
+      "start:frontend": "cd front && npm start"
+    }
+  }
+  
