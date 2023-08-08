@@ -1,4 +1,4 @@
-import video from '../images/Rectangle4.svg'
+import video from '../images/video.gif'
 import '../styles/academia.css'
 
 const Academia=()=>{

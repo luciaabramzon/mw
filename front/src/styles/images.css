@@ -1,5 +1,6 @@
 
-.imagesGrid{
+
+  .imagesGrid{
     display: grid;
     grid-template-rows: repeat(2, 1fr); 
     gap: 10px; 
@@ -35,19 +36,43 @@ border-radius: 5px;
 .imagesGrid img{
     margin: 0.2%;
 }
-@media (max-width: 768px) {
-    .imgText{
-        justify-content: center;
+  
+  @media (max-width: 768px) {
+    .imagesGrid {
+      display: none; /* Ocultar el grid en dispositivos móviles */
     }
-    .divTitle ,.divText{
-        width: 100%;
-        margin: 3% 7%;
+  }
+  
+  .bannerContainer {
+    display: none; /* Ocultar el banner en pantallas grandes */
+  }
+  
+  @media (max-width: 768px) {
+    .bannerContainer {
+      display: block; /* Mostrar el banner en dispositivos móviles */
+      text-align: center;
+      margin: 20px 0;
     }
-    .buttonImages button{
-        width: 50%;
+    .imagesContainer {
+        height: 100vh;
+    }
+    .logoImg{
+        margin-top:20%
     }
     .logoImg img{
-        width: 80%;
-        margin: 10%;
+        width: 90%;
     }
-}
+  }
+  
+  .bannerImages {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .bannerImages img {
+    width: 100%;
+    height: auto;
+  }
+
+  

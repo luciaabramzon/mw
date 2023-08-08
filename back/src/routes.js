@@ -7,14 +7,14 @@ dotenv.config()
 
 router.post('/contact',async(req,res)=>{
 try{
-    const{nombre,apellido,asunto,mensaje}=req.body
-    const newContact=new Contact({nombre,apellido,asunto,mensaje})
+    const{nombre,apellido,telefono,mensaje}=req.body
+    const newContact=new Contact({nombre,apellido,telefono,mensaje})
     await newContact.save()
     const emailOptions={
         form:process.env.mail,
         to:process.env.mail,
         subject:'Nuevo usuario',
-        html:`nombre:${nombre} , apellido ${apellido} , asunto ${asunto}, mensaje ${mensaje}`
+        html:`nombre:${nombre} , apellido ${apellido} , telefono ${telefono}, mensaje ${mensaje}`
 
     }
     await sendEmail(emailOptions)

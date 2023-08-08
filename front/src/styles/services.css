@@ -41,10 +41,6 @@ letter-spacing: 0em;
 text-align: left;
 }
 
-.eImg img{
-    margin: 3% 5% 3%;
-}
-
 .edades{
     display: flex;
     flex-wrap: wrap;

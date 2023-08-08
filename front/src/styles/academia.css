@@ -25,7 +25,13 @@ body{
       transform: translate(-50%, -50%);
       color: black; /* Ajusta el color del texto */
     }
-    
+    .video{
+      display: flex;
+    }
+    .video img{
+      margin: 0 auto;
+      width: 90%;
+    }
     @media (max-width: 768px) {
       .tenis-text{
         top:50%;
@@ -80,5 +86,8 @@ body{
     @media (max-width: 768px) {
     .academia{
         height: 100vh;
+      }
+      .divTitle,.divText{
+        width: 100%;
       }
     }

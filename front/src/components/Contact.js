@@ -12,7 +12,7 @@ const api = axios.create({
 const Contact = () => {
   const [nombre,setNombre]=useState('')
   const [apellido,setApellido]=useState('')
-  const [asunto,setAsunto]=useState('')
+  const [telefono,setTelefono]=useState('')
   const [mensaje,setMensaje]=useState('')
   const [mensajeEnviado,setMensajeEnviado]=useState(true)
   const [loading,setLoading]=useState(false)
@@ -22,7 +22,7 @@ const Contact = () => {
 
     try {
       setLoading(true) 
-      await api.post('/contact', {nombre,apellido,asunto,mensaje});
+      await api.post('/contact', {nombre,apellido,telefono,mensaje});
       setLoading(false)
      setMensajeEnviado(false)
     } catch (error) {
@@ -33,7 +33,7 @@ const Contact = () => {
   const messageSent=()=>{
     setNombre('')
     setApellido('')
-    setAsunto('')
+    setTelefono('')
     setMensaje('')
     setMensajeEnviado(true)
   }
@@ -70,14 +70,14 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className="asunto">
-            <label>Asunto</label>
+          <div className="telefono">
+            <label>Telefono</label>
             <input
               name="asunto"
-              value={asunto}
-              placeholder="Asunto"
+              value={telefono}
+              placeholder="Telefono"
               className="asuntoText"
-              onChange={e=>setAsunto(e.target.value)}
+              onChange={e=>setTelefono(e.target.value)}
             />
           </div>
           <div className="message">
@@ -101,8 +101,8 @@ const Contact = () => {
       ):(
         <div className='sending'>
           {loading ? (
-            <div >
-          <h1 className='enviando'>ENVIANDO...</h1>
+            <div className='enviando'>
+          <h1 >ENVIANDO...</h1>
           </div>
           ):
           ( 
